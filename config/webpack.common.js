@@ -59,7 +59,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        loader: "less-loader", // 将 Less 文件编译为 CSS 文件
+        loaders: ["style-loader", "css-loader", "less-loader"], // 将 Less 文件编译为 CSS 文件
       },
       {
         test: /\.(js|ts)x?$/, //jsx或者tsx文件
